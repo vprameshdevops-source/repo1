@@ -11,5 +11,46 @@ git add testfile.txt
 git commit -m "moving files to committed area" testfile.txt
     --> commits the files into committed area from staging one
 
+git checkout -b vp
+    --> This creats new branch and switch to it automatically.
 
+git branch vp
+    --> creats new branch
+
+git checkout vp
+    --> switch to existing branch
+
+git branch -d vp
+    -->Delete the branch
+
+git branch
+    --> Lists all the branch
+
+git remote add origin location
+
+git remote -v
+    --> lists all the remote locations
+
+git push origin master
+    --> Pushes the branch to the remove
+
+https:
+
+https://github.com/vprameshdevops-source/repo1.git
+git:
+git@github.com:vprameshdevops-source/repo1.git
+
+…or create a new repository on the command line
+echo "# repo1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vprameshdevops-source/repo1.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/vprameshdevops-source/repo1.git
+git branch -M main
+git push -u origin main
 
