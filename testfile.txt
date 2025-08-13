@@ -1,0 +1,15 @@
+This is sample file of git
+
+git init
+
+The wokflow is:
+working area --> staging area --> committed files
+
+git add testfile.txt
+    --> copies the files from working area to staging area
+
+git commit -m "moving files to committed area" testfile.txt
+    --> commits the files into committed area from staging one
+
+
+
