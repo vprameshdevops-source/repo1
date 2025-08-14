@@ -1,7 +1,7 @@
 This is sample file of git
 
 git init
-
+    --> Initiates git repo
 The wokflow is:
 working area --> staging area --> committed files
 
@@ -11,14 +11,14 @@ git add testfile.txt
 git commit -m "moving files to committed area" testfile.txt
     --> commits the files into committed area from staging one
 
-git checkout -b vp
-    --> This creats new branch and switch to it automatically.
-
 git branch vp
     --> creats new branch
 
 git checkout vp
     --> switch to existing branch
+
+git checkout -b vp
+    --> This creats new branch and switch to it automatically.
 
 git branch -d vp
     -->Delete the branch
@@ -34,23 +34,87 @@ git remote -v
 git push origin master
     --> Pushes the branch to the remove
 
-https:
 
+--How to create account
+got to github.com and create new account
+
+https:
 https://github.com/vprameshdevops-source/repo1.git
 git:
 git@github.com:vprameshdevops-source/repo1.git
 
 …or create a new repository on the command line
-echo "# repo1" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
+
+git config --global user.email "vpramesh.devops@gmail.com"
+git config --global user.name "vprameshdevops-source"
+
 git remote add origin https://github.com/vprameshdevops-source/repo1.git
-git push -u origin main
+git push -u origin master
+--> This will prompt for one time logging in
 
 …or push an existing repository from the command line
 git remote add origin https://github.com/vprameshdevops-source/repo1.git
 git branch -M main
 git push -u origin main
 
+**********************************
+ramesh@Ramesh-PC MINGW64 ~
+$ cd d:/
+
+ramesh@Ramesh-PC MINGW64 /d
+$ cd Python_basics/python_git/
+
+ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (vp)
+$ git status
+On branch vp
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testfile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (vp)
+$ git commit testfile.txt -m "commiting the latest file"
+[vp 0cd140f] commiting the latest file
+ 1 file changed, 41 insertions(+)
+
+ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (vp)
+$ git status
+On branch vp
+nothing to commit, working tree clean
+
+ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (vp)
+$ git remote add origin https://github.com/vprameshdevops-source/repo1.git
+
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/vprameshdevops-source/repo1.git/'
+
+ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (vp)
+$ git config --global user.email "vpramesh.devops@gmail.com"
+
+ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (vp)
+$ git config --global user.name "vprameshdevops-source"
+
+ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (vp)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 376 bytes | 376.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vprameshdevops-source/repo1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (vp)
+$ git remote -v
+origin  https://github.com/vprameshdevops-source/repo1.git (fetch)
+origin  https://github.com/vprameshdevops-source/repo1.git (push)
+
+ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (vp)
+$ git log
+commit 0cd140f809c1c735db7f33573b59393003e53f44 (HEAD -> vp)
+
+**********************************
