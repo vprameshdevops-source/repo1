@@ -8,3 +8,37 @@ git merge vp
 git push -u origin master
 
 git branch -d vp
+
+
+git checkout -b vp
+    --> This will create branch of master with the pointer to latest checkouts
+    --> also -b option will switch the working node to branch
+    --> You can then amend the changes in branch.
+    --> commit the changes.
+    --> Then you can merge the changes to local master copy.
+    --> To merge first swich branch to master
+    --> You can then push the master to remote repo
+    --> You can then destroy the local branch
+
+git branch master
+    --> Switches to master copy
+
+git merge vp
+    --> Merges the local copy with master copy
+
+git push -u origin vp
+    --> Pushing new branch to remote, though this is not needed but for ref purpose we can do it though
+
+git push -u origin master
+    --> Pushes the local master to remote repo master.
+
+git branch -d vp
+    --> This will delete the local branch
+
+git push origin --delete "vp"
+    --> This will delete the  remote local branch.
+
+
+
+
+
