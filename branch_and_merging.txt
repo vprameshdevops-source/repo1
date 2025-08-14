@@ -1,2 +1,10 @@
 git push -u origin vp
     --> Pushing new branch to remote
+
+git branch master
+
+git merge vp
+
+git push -u origin master
+
+git branch -d vp
