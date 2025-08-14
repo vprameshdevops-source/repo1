@@ -1,0 +1,6 @@
+git tag v1.1
+    --> This creates tag version 1.1o
+
+git tag -a v1.2 -m "This is the stable version"
+    --> This creats versions with the additiona details
+    
