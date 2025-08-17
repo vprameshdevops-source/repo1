@@ -117,4 +117,5 @@ ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (vp)
 $ git log
 commit 0cd140f809c1c735db7f33573b59393003e53f44 (HEAD -> vp)
 
+    --> Tag will provide the build details
 **********************************
