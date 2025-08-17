@@ -1,1 +1,21 @@
 git rebase master
+    --> So whenever we want to take the latest master changes from master in local branch, you need to run this command.
+    --> In order to do it, first you have to checkout to bracch --> git checkout vpr
+    --> Then run the rebase command.
+
+git fetch
+    --> This will just show the changes in the remote repo but it will not pull the file
+
+ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (tagv1)
+$ git fetch
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1021 bytes | 113.00 KiB/s, done.
+From https://github.com/vprameshdevops-source/repo1
+   7c36946..996a94d  master     -> origin/master
+
+ramesh@Ramesh-PC MINGW64 /d/Python_basics/python_git (tagv1)
+$
+
