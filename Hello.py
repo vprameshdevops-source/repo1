@@ -5,4 +5,4 @@ def find_sum(a):
         sum += i
     return sum
 
-print(find_sum(10))
+print('The result is:',find_sum(10))
