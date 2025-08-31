@@ -6,3 +6,4 @@ def find_sum(a):
     return sum
 
 print('The result is:',find_sum(10))
+print('Just commiting this line')
