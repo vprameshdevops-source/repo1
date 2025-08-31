@@ -5,6 +5,7 @@ def find_sum(a):
         sum += i
     return sum
 
+<<<<<<< HEAD
 print(find_sum(10))
 
 # Can you give me a pythron script to generate fibanacci series?
@@ -21,3 +22,7 @@ print(fibonacci(10))
 
 
 
+=======
+print('The result is:',find_sum(10))
+print('Just commiting this line')
+>>>>>>> 7ec9ef18ec53d94e8f0f0bc82363f84b44d7f529
